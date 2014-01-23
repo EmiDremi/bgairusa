@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="icon" href="/favicon-bgair.ico" />  
+    <title>Bulgaria Air USA</title>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="/favicon-bgair.ico" />  
+    <meta name="keywords" content="Bulgaria Air, Bulgaria Air USA, Bulgarian airfare" />
+    <meta name="description" content="Bulgaria Air USA is the airline representative of Bulgaria Air for the U.S. market.">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-booking.css" type="text/css" media="all">
+	<script src="js/jquery-1.js" type="text/javascript"></script>
+	<script src="js/html5.js" type="text/javascript"></script>
+<!--<script src="js/functions.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-dates.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-i18n.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		
+		$("#fromdate").datepicker({ dateFormat: "mm/dd/yy", defaultDate: "0", minDate: "0", changeMonth: true, changeYear: true, numberOfMonths: 1, altField: "#B_DATE_1", altFormat: "yymmdd0000", onSelect: function(selectedDate){ $("#todate").datepicker("option", "minDate",selectedDate); }});
+
+		$("#todate").datepicker({ dateFormat: "mm/dd/yy", defaultDate: "0", minDate: "0", changeMonth: true, changeYear: true, numberOfMonths: 1, altField: "#B_DATE_2", altFormat: "yymmdd0000" });
+
+		$.datepicker.setDefaults( $.datepicker.regional[ "en-GB" ] );
+
+	});
+	</script>
+
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen">
+<script type="text/javascript">
+$(document).ready(function() { 
+	jQuery('.faq, .help').fancybox({
+		maxWidth	: 800,
+		maxHeight	: 700,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: true,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		beforeShow	: function(){ $('#videobox').css('display','none'); },
+		afterClose	: function(){ $('#videobox').css('display','block'); }
+	}); 
+});
+</script>
+
+<script type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$('select[name="IBoardPoint"]').live('change',function(){
+			
+		});
+	</script>
+</head>
+<body>
+<section id="wrapper">
+	<div style="position: fixed; top:0px; left:0px; width: 100%; height: 15%; opacity: 0.9; background-color: white; z-index: 5;">
+		<img src="images/logo.png" alt="Bulgaria Air Logo" height="70" style="margin-top: 15px; margin-left: 30px;" />
+		
+	<div style="position: fixed; top: 0px; right: 0px;"> 
+		<div class="social-sidebar-buttons">
+	       <a href="http://www.facebook.com/bulgariaairusa" title="Google+"><img src="images/fb.png" width="45" height="45" alt="Facebook" /></a>       
+           <a href="http://www.pinterest.com/bulgariaairusa" title="pinterest"><img src="images/pin.png" width="45" height="45" alt="Pinterest"/></a>
+	       <a href="http://www.twitter.com/bulgariaairusa" title="twitter"><img src="images/tw.png" width="45" height="45" alt="Twitter" /></a>
+	       <a href="mailto:tickets@bulgariaairusa.com" title="email"><img src="images/mail.png" width="45" height="45" alt="Email" /></a>
+	    </div>
+
+	    <div style="height: 50px; float: right; display: block; margin-top: 65px; position: relative; right: -190px;">
+		 <p style="color: #909090; font: 300 13px/1.2 'nexa',arial,sans-serif; position: relative; float: left; margin-right: 10px;">SIGN UP FOR OUR NEWSLETTER<br/>TO RECEIVE EXCLUSIVE DEALS</p>
+	     <form accept-charset="UTF-8" action="https://cs152.infusionsoft.com/app/form/process/530f203d1d773a75653a4e548032fa26" class="infusion-form"  style="font: 400 15px/1.8 'proxima-nova',arial,sans-serif; float: left;" method="POST">
+		  <input name="inf_form_xid" type="hidden" value="530f203d1d773a75653a4e548032fa26" />
+		  <input name="inf_form_name" type="hidden" value="Newsletter Opt-in" />
+		  <input name="infusionsoft_version" type="hidden" value="1.29.9.21" />
+		  <div class="infusion-field">
+		    <label for="inf_field_FirstName">Name *</label>
+		    <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="NAME" type="text" />
+		  </div>
+		  <div class="infusion-field">
+		    <label for="inf_field_Email">Email *</label>
+		    <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" placeholder="EMAIL" type="email" />
+		  </div>
+		  <div class="form-box-button form-box-button-submit">
+		    <input type="submit" value="I&apos;M IN" name="I&apos;M IN" style="font: 300 13px/1.2 'nexa',arial,sans-serif;"/>
+		  </div>
+		 </form>
+		</div>
+		
+</div>
+		
+	</div>
+	<section id="bg">
+		<img style="top: 0px; left: 0px; opacity: 1;" src="images/bg1.jpg" alt="above the clouds">
+	</section>
+	<!-- /#bg -->
+	<section class="content-box">	
+
+		<section class="whitebox">
+					<div class="content">
+                    <!-- Add the check reservation form too    
+						<div class="main-booking-form">
+							<div class="main-booking-form-tabs">
+								<ul id="tabs">
+									<li id="reserve-tab" class="reserve-tab-active"><a href="javascript:;">Reservations</a></li>
+                                    <li id="checkreserve-tab" class="checkreserve-tab"><a href="javascript:;">Check your booking</a></li>
+								</ul>
+							</div>
+                            --><br/>
+							<div class="main-booking-form-body">
+
+								<div id="reserve-tab-body">
+								<form name="AIR_ENTRY_FORM" id="amadeus_book" action="http://book.air.bg/plnext/bulgarian1/Override.action" method="post">
+
+									<div style="color: #686868; font-size: 15px; font-weight: bold; margin: 10px 0px;">SEARCH FOR FLIGHTS</div>
+									<div class="main-booking-form-container">
+
+									<div class="main-booking-form-container-box main-booking-form-nospace">
+										<div class="main-booking-form-container-choose-from width210">
+											<span class="main-booking-form-container-choose">Departure</span>
+											<select name="B_LOCATION_1" id="B_LOCATION_1" class="main-booking-form-container-choose">
+												<option value="0">-- choose an airport --</option>
+								<option  value='ATL'>Atlanta , USA (ATL)</option><option  value='BWI'>Baltimore , USA (BWI)</option><option  value='BOS'>Boston , USA (BOS)</option><option  value='BUF'>Buffalo , USA (BUF)</option><option  value='CLT'>Charlotte , USA (CLT)</option><option  value='ORD'>Chicago , USA (ORD)</option><option  value='DFW'>Dallas , USA (DFW)</option><option  value='DEN'>Denver , USA (DEN)</option><option  value='LAS'>Las Vegas , USA (LAS)</option><option  value='LAX'>Los Angeles , USA (LAX)</option><option  value='MIA'>Miami , USA (MIA)</option><option  value='BNA'>Nashville , USA (BNA)</option><option  value='JFK'>New York , USA (JFK)</option><option  value='EWR'>New York , USA (EWR)</option><option  value='MCO'>Orlando , USA (MCO)</option><option  value='PHL'>Philadelphia , USA (PHL)</option><option  value='PIT'>Pittsburgh , USA (PIT)</option><option  value='STL'>Saint Louis , USA (STL)</option><option  value='SFO'>San Francisco , USA (SFO)</option><option  value='SEA'>Seattle , USA (SEA)</option><option  value='WAS'>Washington DC , USA (WAS)</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-to width210">
+											<span class="main-booking-form-container-choose">Arrival</span>
+											<select name="E_LOCATION_1" id="E_LOCATION_1" class="main-booking-form-container-choose">
+												<option value="0">-- choose an airport --</option><option  value='BOJ'>Bourgas , Bulgaria (BOJ)</option><option selected='selected' value='SOF'>Sofia , Bulgaria (SOF)</option><option  value='VAR'>Varna , Bulgaria (VAR)</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="main-booking-form-container-box main-booking-form-space">
+										<div class="main-booking-form-container-choose-from width210">
+											<input type="radio" name="TRIP_TYPE" value="O" id="oneway" class="main-booking-form-container-choose-radio"/>
+											<label for="oneway">One way</label>
+										</div>
+										<div class="main-booking-form-container-choose-to width210">
+											<input type="radio" name="TRIP_TYPE" value="R" id="twoway" checked="checked" class="main-booking-form-container-choose-radio"/>
+											<label for="twoway">Round trip</label>
+										</div>
+									</div>
+
+									<div class="main-booking-form-container-box main-booking-form-nospace">
+										<div class="main-booking-form-container-choose-from width110">
+											<span class="main-booking-form-container-choose">Departure date</span>
+											<input type="text" id="fromdate" readonly="readonly" value="" class="main-booking-form-container-choose-text" />
+											<input type="hidden" id="B_DATE_1" name="B_DATE_1" value="" />
+										</div>
+										<div class="main-booking-form-container-choose-from width90">
+											<span class="main-booking-form-container-choose">Flexible by</span>
+											<select name="DATE_RANGE_VALUE_1" class="main-booking-form-container-dates">
+												<option value="7" selected="selected">+/- 7 days</option>
+												<option value="6">+/- 6 days</option>
+												<option value="5">+/- 5 days</option>
+												<option value="4">+/- 4 days</option>
+												<option value="3">+/- 3 days</option>
+												<option value="2">+/- 2 days</option>
+												<option value="1">+/- 1 days</option>
+												<option value="0">+/- 0 days</option>
+											</select>
+										</div>
+
+										<div class="main-booking-form-container-choose-to width100" id="returndate-flex">
+											<span class="main-booking-form-container-choose">Flexible by</span>
+											<select name="DATE_RANGE_VALUE_2" class="main-booking-form-container-dates">
+												<option value="7" selected="selected">+/- 7 days</option>
+												<option value="6">+/- 6 days</option>
+												<option value="5">+/- 5 days</option>
+												<option value="4">+/- 4 days</option>
+												<option value="3">+/- 3 days</option>
+												<option value="2">+/- 2 days</option>
+												<option value="1">+/- 1 days</option>
+												<option value="0">+/- 0 days</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-to width110" id="returndate">
+											<span class="main-booking-form-container-choose">Return date</span>
+											<input type="text" id="todate" readonly="readonly" value="" class="main-booking-form-container-choose-text" />
+											<input type="hidden" id="B_DATE_2" name="B_DATE_2" value="" />
+										</div>
+									</div>
+
+									<div class="main-booking-form-container-box main-booking-form-space">
+										<div class="main-booking-form-container-choose-from width100">
+											<span class="main-booking-form-container-choose">Class</span>
+											<select name="CABIN" class="main-booking-form-container-dates">
+												<option value="E" selected="selected">Economy</option>
+												<option value="B">Business</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-from psngr">
+											<span class="main-booking-form-container-choose">Adults</span>
+											<select name="ADTPAX" id="ADTPAX" class="main-booking-form-container-psngr">
+												<option value="0">0</option>
+												<option value="1" selected="selected">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-from psngr">
+											<span class="main-booking-form-container-choose">Students</span>
+											<select name="FIELD_STU_NUMBER" id="FIELD_STU_NUMBER" class="main-booking-form-container-psngr">
+												<option value="0" selected="selected">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-from psngr">
+											<span class="main-booking-form-container-choose">Youths</span>
+											<select name="FIELD_YTH_NUMBER" id="FIELD_YTH_NUMBER" class="main-booking-form-container-psngr">
+												<option value="0" selected="selected">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-from psngr">
+											<span class="main-booking-form-container-choose">Children</span>
+											<select name="CHDPAX" id="CHDPAX" class="main-booking-form-container-psngr">
+												<option value="0" selected="selected">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+										<div class="main-booking-form-container-choose-from psngr">
+											<span class="main-booking-form-container-choose">Infants</span>
+											<select name="InfantPAX" id="InfantPAX" class="main-booking-form-container-psngr">
+												<option value="0" selected="selected">0</option>
+												<option value="1">1</option>
+											</select>
+										</div>
+									</div>
+
+										<div class="main-booking-form-container-links">
+											<a href="#faq-reserve" class="faq">Frequently Asked Questions</a>
+	<div id="faq-reserve" class="faq-container" style="display:none;">
+		<h2>Frequently asked questions</h2><p><strong>&nbsp;</strong></p>
+<p><strong>1. Can I buy a ticket for a flight departing today?</strong></p>
+<p>No, you can buy a ticket for a flight which departs not earlier than 24h. from the moment of the purchase.</p>
+<p><strong>2.&nbsp; </strong><strong>Can I buy a ticket for an unaccompanied minor at age between 2 and 12 from the website www.air.bg ?</strong></p>
+<p>Unfortunately, it is not allowed because this is a special category passenger and you will have to contact our Call Center, airline representative or your travel agent for more information and assistance. ATTENTION! With some exceptions the Unaccompanied Minor Service for escort from/to check-in to/from the flight could not be confirmed for code-share flights, which are not operated by Bulgaria air. In case you would like to request it for such flight you must contact us for more information.</p>
+<p><strong>3. </strong>Can I use only the second part of round trip ticket?</p>
+<p>No, it is not&nbsp; possible because the ticket price is valid only if you use the flights in sequence. Otherwise you will loose the next flight&rsquo;s seat in the ticket.</p>
+<p><strong>4.&nbsp; </strong><strong>Is the price in the website the lowest available one?</strong></p>
+<p>Yes, the system is set to offer you the lowest available price for the moment of you request, according to what is left available on board, dates of departure and arrival, etc. You can also chose higher price if you prefer higher booking class or less restrictive fare. Please have in mind that the price you see during the booking process is real and for its calculation there are seats booked. In case you do not buy a ticket, these are released and the price calculated for another passenger in the website at this moment could decrease.</p>
+<p><strong>5. </strong><strong>Do I have to pay extra for baggage</strong><strong>?</strong></p>
+<p>No, in the price you have paid for your ticket are included 1 piece of hand baggage and 1 piece of checked in baggage. For the business fares double checked in baggage applies, 2 pieces.</p>
+<p>For the baggage policy please find the link here <a href="http://www.air.bg/en/baggage">http://www.air.bg/en/baggage</a> .</p>
+<p>&nbsp;<strong>6. </strong><strong>Do I have to fill in my cellphone?</strong></p>
+<p>We will need your cell phone number with the international dialing code in front, in order to contact you in case there are some schedule changes or flight cancelations.</p>
+<p><strong>7. </strong><strong>The confirmation for reservation I receive bye-mail from </strong><a href="mailto:webmaster@amadeus.net"><strong>webmaster@amadeus.net</strong></a><strong>is only for the reservation or it is a ticket?</strong></p>
+<p>No, the confirmation you receive is for the successful booking you have made and after that you must receive a second e-mail which contains an Itinerary Receipt. The number of the electronic ticket has 13 digits and starts always with 623.</p>
+<p><strong>8. </strong><strong>Can I make an online booking and pay later via bank transfer or in cash at some of your ticket offices?</strong></p>
+<p>No, when you make an online booking you must pay the ticket right after the whole reservation process is done in order to have it finished and confirmed.</p>
+<p><strong>9. </strong><strong>How can I pay with a credit card?</strong></p>
+<p>In the Bulgaria Air&rsquo;s web site you can buy a ticket with a credit card with the VISA or Master Card logo by clicking the &ldquo;Pay with credit card&rdquo; button at the right side of the payment page.</p>
+<p><strong>10.&nbsp; </strong><strong>What is the CVC code?</strong></p>
+<p>The CVC code is the last 3 digits from the number shown at the back of your credit card.</p>
+<p><strong>11.&nbsp; </strong><strong>Is the ticket bought in your website always electronic?</strong></p>
+<p>Yes, firstly right after you have finished the booking you will receive by e-mail a confirmation for reservation and in a few minutes you will receive another letter containing a copy of the electronic ticket, which is desirable to print and take with you during the trip.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	</div>
+										</div>
+										<div class="main-booking-form-container-links">
+											<a href="#help-reserve" class="help">Help</a>
+										</div>
+	<div id="help-reserve" class="help-container" style="display:none;">
+		<h2>Help</h2><p>The booking engine integrated within corporate site <a href="../">www.bulgaruaairusa.com</a> allows passenger to check flight availability and best fares, to make a reservation and purchase ticket online. Credit cards Visa, MasterCard and Discover are accepted as a form of payment.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>1. Flight search</strong></p>
+<p>Travel must start at least 24 hours after the reservation is done.</p>
+<p><strong>2. Price</strong></p>
+<p>The system offers the lowest available price according to the user preferences (dates, availability, cabin class)</p>
+<p><strong>3. Traveler Details</strong></p>
+<p>The passenger must provide all the information needed for reservation and ticketing -&nbsp; traveler&rsquo;s names, e-mail address, telephone number for contact with international dialing code, etc. Traveler&rsquo;s data is stored in Amadeus GDS.</p>
+<p><strong>4. Reservation confirmation and payment</strong></p>
+<p>The passenger receives a confirmation e-mail from <a href="mailto:webmaster@amadeus.net">webmaster@amadeus.net</a> at the e-mail address given in the reservation. It consist the reservation code. With this code the user can check his reservation at <a href="http://www.checkmytrip.com">www.checkmytrip.com</a>. The accepted credit cards for payment are VISA, Master Card and Discover.</p>
+<p><strong>5. Ticket issuance</strong></p>
+<p>The issuance of the ticket is processed when confirmation for payment has been received. For traveling the passenger needs identity document and a copy of the e-ticket, received by e-mail. The airline has an official contract for air carriage with the passenger after receiving a confirmation e-mail, containing a copy of an electronic ticket. In case such e-mail has not been received, the passenger must contact the Call Center of Bulgaria Air for confirmation.</p>
+<p><strong>6. Cancellation and modifications</strong></p>
+<p>After the payment and ticket issuance, any cancellations and changes must be made only by the Call Center of Bulgaria Air.</p>
+	</div>
+								
+									<div id="traveler_data" class="main-booking-form-container-amadeus"></div>
+									<div id="amadeus_data" class="main-booking-form-container-amadeus"><input type="hidden" id="SO_SITE_USER_CURRENCY_CODE" name="SO_SITE_USER_CURRENCY_CODE" value="EUR" />
+<input type="hidden" id="EMBEDDED_TRANSACTION" name="EMBEDDED_TRANSACTION" value="FlexPricerAvailability" />
+<input type="hidden" id="EXTERNAL_ID" name="EXTERNAL_ID" value="BOOKING" />
+<input type="hidden" id="LANGUAGE" name="LANGUAGE" value="GB" />
+<input type="hidden" id="SEARCH_BY" name="SEARCH_BY" value="1" />
+<input type="hidden" id="SITE" name="SITE" value="5ANS5ANS" />
+<input type="hidden" id="RESULT_LANGUAGE" name="RESULT_LANGUAGE" value="EN" />
+<input type="hidden" id="SO_SITE_QUEUE_OFFICE_ID" name="SO_SITE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
+<input type="hidden" id="SO_QUEUE_NUMBER" name="SO_QUEUE_NUMBER" value="0" />
+<input type="hidden" id="SO_QUEUE_CATEGORY" name="SO_QUEUE_CATEGORY" value="0" />
+<input type="hidden" id="SO_FAILURE_QUEUE_OFFICE_ID" name="SO_FAILURE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
+<input type="hidden" id="SO_FAILURE_QUEUE_NUMBER" name="SO_FAILURE_QUEUE_NUMBER" value="13" />
+<input type="hidden" id="SO_FAILURE_QUEUE_CATEGORY" name="SO_FAILURE_QUEUE_CATEGORY" value="0" />
+<input type="hidden" id="TR_FLIGHTS" name="TR_FLIGHTS" value="TRUE" />
+<input type="hidden" id="SHUTTLE_FLIGHTS" name="SHUTTLE_FLIGHTS" value="TRUE" />
+<input type="hidden" id="SCHEDULE" name="SCHEDULE" value="TRUE" />
+<input type="hidden" id="SEVEN_DAY_SEARCH" name="SEVEN_DAY_SEARCH" value="TRUE" />
+<input type="hidden" id="SO_SITE_SD_AIRL_FILTER_ACTIV" name="SO_SITE_SD_AIRL_FILTER_ACTIV" value="TRUE" />
+<input type="hidden" id="SO_SITE_REST_AIRLINES_LST" name="SO_SITE_REST_AIRLINES_LST" value="FB;VS;9W;US" />
+<input type="hidden" id="TRIP_FLOW" name="TRIP_FLOW" value="YES" />
+<input type="hidden" id="BOOKING_FLOW" name="BOOKING_FLOW" value="REVENUE" />
+<input type="hidden" id="PRICING_TYPE" name="PRICING_TYPE" value="O" />
+<input type="hidden" id="DISPLAY_TYPE" name="DISPLAY_TYPE" value="1" />
+<input type="hidden" id="SO_SITE_FP_PRICING_TYPE" name="SO_SITE_FP_PRICING_TYPE" value="O" />
+<input type="hidden" id="ARRANGE_BY" name="ARRANGE_BY" value="D" />
+<input type="hidden" id="REFRESH" name="REFRESH" value="0" />
+<input type="hidden" id="COMMERCIAL_FARE_FAMILY_1" name="COMMERCIAL_FARE_FAMILY_1" value="ECONOMY" />
+<input type="hidden" id="COMMERCIAL_FARE_FAMILY_2" name="COMMERCIAL_FARE_FAMILY_2" value="BUSINESS" />
+<input type="hidden" id="DATE_RANGE_QUALIFIER_1" name="DATE_RANGE_QUALIFIER_1" value="C" />
+<input type="hidden" id="DATE_RANGE_QUALIFIER_2" name="DATE_RANGE_QUALIFIER_2" value="C" />
+<input type="hidden" id="SO_SITE_ALLOW_SERVICE_FEE" name="SO_SITE_ALLOW_SERVICE_FEE" value="1" />
+<input type="hidden" id="ALLOW_PRIMARY_YTH" name="ALLOW_PRIMARY_YTH" value="Y" />
+<input type="hidden" id="ALLOW_PRIMARY_STU" name="ALLOW_PRIMARY_STU" value="Y" />
+<input type="hidden" id="E_TIME" name="E_TIME" value="0000" />
+<input type="hidden" id="B_TIME" name="B_TIME" value="0000" />
+<input type="hidden" id="B_ANY_TIME_1" name="B_ANY_TIME_1" value="TRUE" />
+<input type="hidden" id="B_ANY_TIME_2" name="B_ANY_TIME_2" value="TRUE" />
+<input type="hidden" id="SO_GL" name="SO_GL" value="<?xml version='1.0' encoding='iso-8859-1'?><SO_GL><GLOBAL_LIST><NAME>SITE_LIST_EXTERNAL_REMARK</NAME><LIST_ELEMENT><CODE>*</CODE><LIST_VALUE>BKT+online booking</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST><GLOBAL_LIST><NAME>SITE_SERVICE_FEE</NAME><LIST_ELEMENT><CODE>0</CODE><LIST_VALUE>0</LIST_VALUE><LIST_VALUE>2</LIST_VALUE><LIST_VALUE></LIST_VALUE><LIST_VALUE>BGN</LIST_VALUE><LIST_VALUE>0</LIST_VALUE><LIST_VALUE>DU</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST><GLOBAL_LIST><NAME>SO_SINGLE_MULTIPLE_COMMAND_BUILDER</NAME><LIST_ELEMENT><CODE>1</CODE><LIST_VALUE><![CDATA[RM IP ]]></LIST_VALUE><LIST_VALUE>S</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST></SO_GL> " />
+</div>
+
+		<div class="form-box-button form-box-button-submit" style="margin: 20px 10px;">
+			<input type="submit" value="Search" name="" style="font: 300 13px/1.2 'nexa',arial,sans-serif;"/>
+		</div>
+
+
+								</form>
+								</div>
+<div style="color: #686868; font-size: 15px; font-weight: bold; text-align: center; position: relative; top:10px; width: 100%;">1-855-FLY-TO-BG (359-8624)</div>
+							</div>
+
+						</div>
+
+					</div>		
+
+		</section>
+ 
+		<!-- /.whitebox -->
+
+	</section>
+	<!-- /.content-box -->
+</section>
+<footer id="ftr">
+   Copyright © 2014 Bulgaria Air USA
+</footer>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body></html>
