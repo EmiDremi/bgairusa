@@ -27,8 +27,10 @@ body {
     line-height: 18px;
     font-family: 'SegoeUI', arial, sans-serif;
     color: #aeaeae;
-    background: #fff;
     min-width:480px;
+    background-image: url('../images/bg1.jpg'); 
+    background-size: cover; 
+    background-repeat:no-repeat;
 }
 
 a { color: #0252aa; text-decoration: none; cursor: pointer; }
