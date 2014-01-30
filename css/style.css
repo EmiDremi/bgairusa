@@ -93,15 +93,16 @@ h1#logo a { background:url(../images/logo.png) no-repeat; display:block; height:
 .footer a { color:#fff;  }
 */
 #ftr {
-    background: rgba(176,176,176, 0.5);
+    background: rgba(255,255,255, 0.5);
 	position: fixed; 
 	bottom: 5px; 
-	left: 40px; 
+	right: 5px; 
 	z-index: 5; 
 	font-family: "nexa",arial,sans-serif; 
-	font-size: 15px; 
-	color: white; 
+	font-size: 13px; 
+	color: #606060; 
 	padding: 5px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -160,4 +161,47 @@ h1#logo a { background:url(../images/logo.png) no-repeat; display:block; height:
   .infusion-field input[type="text"], .signup-strip input[type="email"] {
     margin: 0 2px 15px;
   }
+}
+
+#footer-links {
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+}
+
+div#footer-links a {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+	text-decoration: none;
+	color: #606060;
+	padding: 0px 5px; 
+	margin: 0px;
+}
+
+div#footer-links a:hover{
+	text-decoration: underline;
+}
+
+div.footer-link-container h2 {
+	font-size: 18px;
+	color: #B70000;
+	font-weight: normal;
+	line-height: 26px;
+}
+
+div.footer-link-container p {
+	font-size: 1em;
+	color: #666666;
+	text-align: left;
+	margin: 10px 0;
+	padding: 0px;
+}
+
+div.footer-link-container p a {
+	color: #B70000;
+	text-decoration: underline;
+}
+
+div.footer-link-container p a:hover {
+	text-decoration: none;
 }
