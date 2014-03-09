@@ -112,3 +112,53 @@ $('#B_LOCATION_1,#E_LOCATION_1').change(function(){
 });
 */
 
+$("#sign_up_form").submit(function(e){
+	//e.preventDefault();
+
+	if ($("#inf_field_FirstName").val() == '') {
+		$("#inf_field_FirstName").css("border-color", "red");
+		$("#status").html("PLEASE, ENTER NAME!");
+		$("#status").css("visibility", "visible");
+		setTimeout(function() {$("#status").css("visibility", "hidden"); $("#inf_field_FirstName").css("border-color", "rgb(238, 238, 238)");}, 5000);
+		return false;
+	}
+	
+	var email_addr = $('#inf_field_Email').val();
+	if (email_addr == '') {
+		$("#inf_field_Email").css("border-color", "red");
+		$("#status").html("PLEASE, ENTER EMAIL ADDRESS!");
+		$("#status").css("visibility", "visible");
+		setTimeout(function() {$("#status").css("visibility", "hidden"); $("#inf_field_Email").css("border-color", "rgb(238, 238, 238)");}, 5000);
+		return false;
+	}
+	
+	var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	if(!regex.test(email_addr)) {
+           $("#status").html("INVALID EMAIL ADDRESS!");
+		   $("#status").css("visibility", "visible");
+		   $("#inf_field_Email").css("border-color", "red");
+           setTimeout(function() {$("#status").css("visibility", "hidden");$("#inf_field_Email").css("border-color", "rgb(238, 238, 238)");}, 5000);
+           return false;
+    }
+
+	$.ajax({
+        type: 'POST',
+       	url: 'https://cs152.infusionsoft.com/app/form/process/530f203d1d773a75653a4e548032fa26',
+	    data: $("#sign_up_form").serialize(),
+	    success: function(response, textStatus, jqXHR) {
+          $("#inf_field_FirstName").val("");
+          $("#inf_field_Email").val("");
+		  $("#status").html("THANK YOU FOR SIGNING UP!");
+		  $("#status").css("visibility", "visible");
+		  setTimeout(function() {$("#status").css("visibility", "hidden");}, 5000);
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+	      $("#status").html("THERE WAS A PROBLEM!");
+	      $("#status").css("visibility", "visible");
+	      setTimeout(function() {$("#status").css("visibility", "hidden");}, 5000);
+		},
+		dataType: 'html'
+	});
+	
+});
+
