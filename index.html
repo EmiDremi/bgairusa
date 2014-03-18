@@ -14,8 +14,8 @@
     <meta property="og:description" content="Official USA site of Bulgaria Air - find the best online deals for flights to Bulgaria.">
     <meta property="og:site_name" content="Bulgaria Air USA">
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen">
+   <link rel="stylesheet" href="css/style-booking.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-booking.css" type="text/css" media="all">
 	<script src="js/jquery-1.js" type="text/javascript"></script>
 	<script src="js/html5.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -83,10 +83,9 @@
 </head>
 <body>
 <section id="wrapper">
-	<div style="position: fixed; top:0px; left:0px; width: 100%; height: 18%; opacity: 0.9; background-color: white; z-index: 5;">
-		<img src="images/logo.png" alt="Bulgaria Air Logo" height="70" style="margin-top: 15px; margin-left: 30px;" />
+	<div id="banner" style="position: relative; top:0px; left:0px; width: 100%;  min-height: 120px; opacity: 0.9; background-color: white; z-index: 5; overflow: hidden;">
+		 <img src="images/logo.png" alt="Bulgaria Air Logo" height="70" style="position: relative; top: 45px; left: 30px; margin-bottom: 30px;" />
 		
-	<div style="position: fixed; top: 0px; right: 0px;"> 
 		<div class="social-sidebar-buttons">
 	       <a href="http://www.facebook.com/bulgariaairusa" title="Google+"><img src="images/fb.png" width="45" height="45" alt="Facebook" /></a>       
            <a href="http://www.pinterest.com/bulgariaairusa" title="pinterest"><img src="images/pin.png" width="45" height="45" alt="Pinterest"/></a>
@@ -94,9 +93,9 @@
 	       <a href="mailto:tickets@bulgariaairusa.com" title="email"><img src="images/mail.png" width="45" height="45" alt="Email" /></a>
 	    </div>
 
-	    <div style="height: 50px; float: right; display: block; margin-top: 65px; position: relative; right: -190px;">
-		 <p style="color: #909090; font: 300 13px/1.2 'nexa',arial,sans-serif; position: relative; float: left; margin-right: 10px;">SIGN UP FOR OUR NEWSLETTER<br/>TO RECEIVE EXCLUSIVE DEALS</p>
-	     <form id="sign_up_form" accept-charset="UTF-8" action="javascript:void(0);" class="infusion-form"  style="font: 400 15px/1.8 'proxima-nova',arial,sans-serif; float: left;" method="POST">
+	    <div id="sign_up_container" style="float: right; margin: 45px 30px 30px;">
+		 <p style="color: #909090; font: 300 13px/1.2 'nexa',arial,sans-serif; position: relative; margin-right: 10px; margin-bottom: 10px;">SIGN UP FOR OUR NEWSLETTER<br/>TO RECEIVE EXCLUSIVE DEALS</p>
+	     <form id="sign_up_form" accept-charset="UTF-8" action="javascript:void(0);" class="infusion-form"  style="font: 400 15px/1.8 'proxima-nova',arial,sans-serif;" method="POST">
 		  <input name="inf_form_xid" type="hidden" value="530f203d1d773a75653a4e548032fa26" />
 		  <input name="inf_form_name" type="hidden" value="Newsletter Opt-in" />
 		  <input name="infusionsoft_version" type="hidden" value="1.29.9.21" />
@@ -111,14 +110,14 @@
 		  </div>
 		 </form>
 		<br/>
-		</div>
-	</div>
+		</div> <!-- sign_up_container div -->
+
 	<div id="status" style="color:red; position: absolute; bottom: 10px; right: 300px; visibility: hidden;"></div> 
 	
-	</div>
+	</div> <!-- banner div -->
 	
-
-	<section class="content-box">	
+  <div id="content-box-container" style="width: 100%; position: relative; display: block; overflow; scroll;">
+	<section class="content-box">
 
 		<section class="whitebox">
 					<div class="content">
@@ -375,28 +374,34 @@
  
 		<!-- /.whitebox -->
 
+		<div id="ftr">
+		   Copyright © 2014 Bulgaria Air USA
+		   <div id="footer-links"> 
+		     <a href="#privacy-show" id="privacy">Privacy</a>|<a href="#contact-show" id="contact">Contact</a>|<a href="#terms-show" id="terms">Terms of Service</a>
+
+		     <div id="privacy-show" class="footer-link-container" style="display:none;">
+		       <h2>Privacy Policy</h2>
+		       <p>Insert the privacy policy text here</p>
+		     </div>
+		     <div id="contact-show" class="footer-link-container" style="display:none;">
+		       <h2>Contact</h2>
+		       <p>Insert the contact information text here</p>
+		     </div>
+		     <div id="terms-show" class="footer-link-container" style="display:none;">
+		       <h2>Terms of Service</h2>
+		       <p>Insert the terms of service text here</p>
+		     </div>
+		   </div>
+		</div>
+
 	</section>
 	<!-- /.content-box -->
-</section>
-<footer id="ftr">
-   Copyright © 2014 Bulgaria Air USA
-   <br/>
-   <div id="footer-links"> 
-     <a href="#privacy-show" id="privacy">Privacy</a>|<a href="#contact-show" id="contact">Contact</a>|<a href="#terms-show" id="terms">Terms of Service</a>
 
-     <div id="privacy-show" class="footer-link-container" style="display:none;">
-       <h2>Privacy Policy</h2>
-       <p>Insert the privacy policy text here</p>
-     </div>
-     <div id="contact-show" class="footer-link-container" style="display:none;">
-       <h2>Contact</h2>
-       <p>Insert the contact information text here</p>
-     </div>
-     <div id="terms-show" class="footer-link-container" style="display:none;">
-       <h2>Terms of Service</h2>
-       <p>Insert the terms of service text here</p>
-     </div>
-   </div>
-</footer>
+  </div> <!-- content-box-container div -->
+
+</section>
+
+
+
 <script type="text/javascript" src="js/scripts.js"></script>
 </body></html>

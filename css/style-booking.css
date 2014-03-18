@@ -1,126 +1,7 @@
 
-/* USER CLASSES */
-div.main_menu{
-	width: 960px;
-	height: 38px;
-	margin: 5px 0 0 0;
-	position: relative;
-	background: transparent url('/images/menu_tail.png') top left repeat-x;
-}
-
-div.main_menu_empty{
-	width: 960px;
-	height: 38px;
-	margin: 5px 0 0 0;
-	position: relative;
-}
-
-ul.main_menu_list{
-	width: 960px;
-	height: 38px;
-	overflow: hidden;
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-}
-
-ul.main_menu_list li{
-	border-right: 1px solid #C7D1DB;
-	overflow: hidden;
-}
-
-ul.main_menu_list li a{
-	color: #596978;
-	font-size: 10px;
-	text-transform: uppercase;
-	text-decoration: none;
-	margin: 0px;
-	padding-left: 13px;
-	padding-right: 12px;
-	padding-bottom: 0px;
-	text-align: center;
-	background: transparent;
-	background-image: url('/images/bg-menu-hover.png');
-	background-position: center -38px;
-	background-repeat: no-repeat;
-}
-
-a.main_menu_one, a.main_menu_one_selected{
-	height: 38px;
-	padding-top: 0px;
-	line-height: 38px;
-}
-
-a.main_menu_two, a.main_menu_two_selected{
-	height: 32px;
-	padding-top: 6px;
-	line-height: 12px;
-}
-
-ul.main_menu_list li a.main_menu_two_selected, ul.main_menu_list li a.main_menu_one_selected{
-	background-position: center top;
-}
-
-ul.main_menu_list li a:hover{
-	background-position: center top;
-}
-
-div.breadcrumb_menu{
-	float: left;
-	position: relative;
-	width: 950px;
-	height: 22px;
-	margin: 0px;
-	padding: 8px 0 0 10px;
-	background: transparent ;
-}
-
-div.breadcrumb_menu span{
-	float: left;
-	position: relative;
-	padding: 0 4px 0 8px;
-	margin: 0px;
-	font-size: 10px;
-	color: #9D9D9D;
-	background: transparent url('/images/bg-bread-crumb.gif') 3px center no-repeat;
-}
-
-div.breadcrumb_menu span a{
-	text-decoration: none;
-	color: #9D9D9D;
-}
-
-span.breadcrumb-home a{
-	font-weight: bold;
-}
-
-div.breadcrumb_menu span a:hover{
-	text-decoration: underline;
-}
-
 /* MAIN CONTENT CLASSES */
 
-div.content_wide, div.content_wide_backgroundfix{
-	width: 100%;
-	float: left;
-	position: relative;
-	margin: 0px;
-	padding: 0px;
-}
-
-div.content_wide{
-	background: transparent url('/images/background_border_fade_tile.png') top center repeat-y;
-}
-
-div.content_wide_backgroundfix{
-	background-color: transparent;
-	background-image: url('/images/background.jpg');
-	background-position: center -196px;
-	background-repeat: no-repeat;
-}
-
 div.content{
-	width: 940px;
 	margin: 0px auto;
 	padding: 0px 0px;
 	background: transparent;
@@ -131,39 +12,7 @@ div.content *{
 	position: relative;
 }
 
-div.content_title{
-	width: 930px;
-	height: 32px;
-	margin: 0px;
-	padding: 0 0 10px 10px;
-	line-height: 32px;
-	color: #B70000;
-	font-size: 22px;
-}
 
-div.content_textbody_full{
-	width: 920px;
-	padding: 0px 10px;
-	margin: 0px;
-	overflow: hidden;
-}
-
-div.content_book{
-	width: 940px;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
-	background-color: blue;
-}
-
-#map_canvas{
-	width: 680px;
-	height: 500px;
-	border: 1px solid #BDC9D5;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px
-}
 
 div.timetable-short-titletext{
 	width: 680px;
@@ -1368,7 +1217,7 @@ div.form-box-button-reset{
 }
 
 div.form-box-button-submit{
-	float: right;
+	float: left;
 }
 
 /* FOOTER CLASSES */
