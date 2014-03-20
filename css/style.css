@@ -111,22 +111,66 @@ h1#logo a { background:url(../images/logo.png) no-repeat; display:block; height:
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 465px) {
-    
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
     .content-box { margin-left:-180px;  }
 }
 
 
+@media only screen and (max-width: 480px) {
+    .content-box { left: 0px;  margin-left: 5px; }
+}
+
 @media only screen and (max-width: 465px) {
-    
-    .content-box { left: 0px;  margin-left: 0px;}
+    .content-box { left: 0px;  margin-left: 0px; }
 }
 
 .social-sidebar-buttons {
   width: 200px;
-  position: absolute;
-  top: 10px;
-  right:20px;
+  float: right;
+  margin-top: 10px;
+}
+
+#bgairlogo {
+	float: left;
+	margin-left: 30px;
+	margin-top: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+    #bgairlogo { margin-top: 0px; }
+}
+
+#sign_up_container {
+	float: right; 
+	margin: 45px 30px 30px;
+}
+
+@media only screen and (max-width: 1120px) {
+    #sign_up_container { margin-top: 25px; }
+}
+
+@media only screen and (max-width: 917px) {
+    #sign_up_container { margin-top: 0px; }
+}
+
+#banner {
+	position: relative; 
+	top:0px; 
+	left:0px; 
+	width: 100%;  
+	min-height: 120px; 
+	opacity: 0.9; 
+	background-color: white; 
+	z-index: 5; 
+	overflow: hidden;
+}
+
+#sign_up_title {
+	color: #909090; 
+	font: 300 13px/1.2 'nexa',arial,sans-serif; 
+	position: relative; 
+	margin-right: 10px; 
+	margin-bottom: 10px;
 }
 
 .infusion-field {
