@@ -113,13 +113,13 @@ $('#B_LOCATION_1,#E_LOCATION_1').change(function(){
 */
 
 $("#sign_up_form").submit(function(e){
-	//e.preventDefault();
+	e.preventDefault();
 
-	if ($("#inf_field_FirstName").val() == '') {
-		$("#inf_field_FirstName").css("border-color", "red");
+	if ($("#inf_field_Name").val() == '') {
+		$("#inf_field_Name").css("border-color", "red");
 		$("#status").html("PLEASE, ENTER NAME!");
 		$("#status").css("visibility", "visible");
-		setTimeout(function() {$("#status").css("visibility", "hidden"); $("#inf_field_FirstName").css("border-color", "rgb(238, 238, 238)");}, 5000);
+		setTimeout(function() {$("#status").css("visibility", "hidden"); $("#inf_field_Name").css("border-color", "rgb(238, 238, 238)");}, 5000);
 		return false;
 	}
 	
@@ -143,17 +143,17 @@ $("#sign_up_form").submit(function(e){
 
 	$.ajax({
         type: 'POST',
-       	url: 'https://cs152.infusionsoft.com/app/form/process/530f203d1d773a75653a4e548032fa26',
+       	url: 'process_signup.php5',
 	    data: $("#sign_up_form").serialize(),
 	    success: function(response, textStatus, jqXHR) {
-          $("#inf_field_FirstName").val("");
+          $("#inf_field_Name").val("");
           $("#inf_field_Email").val("");
-		  $("#status").html("THANK YOU FOR SIGNING UP!");
+		  $("#status").html(response);
 		  $("#status").css("visibility", "visible");
 		  setTimeout(function() {$("#status").css("visibility", "hidden");}, 5000);
 		},
 		error: function(jqXHR, textStatus, errorThrown) {
-	      $("#status").html("THERE WAS A PROBLEM!");
+	      $("#status").html("ERROR! STATUS - " + textStatus);
 	      $("#status").css("visibility", "visible");
 	      setTimeout(function() {$("#status").css("visibility", "hidden");}, 5000);
 		},
