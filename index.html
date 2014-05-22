@@ -86,10 +86,10 @@
 	<div id="banner">
 		
 		<div class="social-sidebar-buttons">
-	       <a href="http://www.facebook.com/bulgariaairusa" title="Google+"><img src="images/fb.png" width="45" height="45" alt="Facebook" /></a>       
-           <a href="http://www.pinterest.com/bulgariaairusa" title="pinterest"><img src="images/pin.png" width="45" height="45" alt="Pinterest"/></a>
-	       <a href="http://www.twitter.com/bulgariaairusa" title="twitter"><img src="images/tw.png" width="45" height="45" alt="Twitter" /></a>
-	       <a href="mailto:tickets@bulgariaairusa.com" title="email"><img src="images/mail.png" width="45" height="45" alt="Email" /></a>
+	       <a href="http://www.facebook.com/bulgariaairusa" title="Facebook"><img src="images/fb.png" width="45" height="45" alt="Facebook" /></a>       
+           <a href="http://www.pinterest.com/bulgariaairusa" title="Pinterest"><img src="images/pin.png" width="45" height="45" alt="Pinterest"/></a>
+	       <a href="http://www.twitter.com/bulgariaairusa" title="Twitter"><img src="images/tw.png" width="45" height="45" alt="Twitter" /></a>
+	       <a href="mailto:tickets@bulgariaairusa.com" title="Email"><img src="images/mail.png" width="45" height="45" alt="Email" /></a>
 	    </div>
 	
         <div id="bgairlogo">
@@ -134,9 +134,9 @@
 							<div class="main-booking-form-body">
 
 								<div id="reserve-tab-body">
-								<form name="AIR_ENTRY_FORM" id="amadeus_book" action="http://book.air.bg/plnext/bulgarian1/Override.action" method="post">
+								<form name="AIR_ENTRY_FORM" id="amadeus_book" action="https://siteacceptance.wftc2.e-travel.com/plnext/bulgarian1/Override.action" method="post">
 
-									<div style="color: #686868; font-size: 15px; font-weight: bold; margin: 0px; text-align: left;">SEARCH FOR FLIGHTS<br/><span style="color:red;">(BOOKING ENGINE IS STILL UNDER DEVELOPMENT)</span></div>
+									<div style="color: #686868; font-size: 15px; font-weight: bold; margin: 0px 0px 10px 0px; text-align: left;">SEARCH FOR FLIGHTS</div>
 									<div class="main-booking-form-container">
 
 									<div class="main-booking-form-container-box main-booking-form-nospace">
@@ -209,7 +209,7 @@
 									<div class="main-booking-form-container-box main-booking-form-space">
 										<div class="main-booking-form-container-choose-from width100">
 											<span class="main-booking-form-container-choose">Class</span>
-											<select name="CABIN" class="main-booking-form-container-dates">
+											<select id="CABIN" name="CABIN" class="main-booking-form-container-dates">
 												<option value="E" selected="selected">Economy</option>
 												<option value="B">Business</option>
 											</select>
@@ -315,46 +315,51 @@
 <p><strong>6. Cancellation and modifications</strong></p>
 <p>After the payment and ticket issuance, any cancellations and changes must be made only by the Call Center of Bulgaria Air.</p>
 	</div>
-								
-									<div id="traveler_data" class="main-booking-form-container-amadeus"></div>
-									<div id="amadeus_data" class="main-booking-form-container-amadeus"><input type="hidden" id="SO_SITE_USER_CURRENCY_CODE" name="SO_SITE_USER_CURRENCY_CODE" value="EUR" />
-<input type="hidden" id="EMBEDDED_TRANSACTION" name="EMBEDDED_TRANSACTION" value="FlexPricerAvailability" />
-<input type="hidden" id="EXTERNAL_ID" name="EXTERNAL_ID" value="BOOKING" />
-<input type="hidden" id="LANGUAGE" name="LANGUAGE" value="GB" />
-<input type="hidden" id="SEARCH_BY" name="SEARCH_BY" value="1" />
-<input type="hidden" id="SITE" name="SITE" value="5ANS5ANS" />
-<input type="hidden" id="RESULT_LANGUAGE" name="RESULT_LANGUAGE" value="EN" />
-<input type="hidden" id="SO_SITE_QUEUE_OFFICE_ID" name="SO_SITE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
-<input type="hidden" id="SO_QUEUE_NUMBER" name="SO_QUEUE_NUMBER" value="0" />
-<input type="hidden" id="SO_QUEUE_CATEGORY" name="SO_QUEUE_CATEGORY" value="0" />
-<input type="hidden" id="SO_FAILURE_QUEUE_OFFICE_ID" name="SO_FAILURE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
-<input type="hidden" id="SO_FAILURE_QUEUE_NUMBER" name="SO_FAILURE_QUEUE_NUMBER" value="13" />
-<input type="hidden" id="SO_FAILURE_QUEUE_CATEGORY" name="SO_FAILURE_QUEUE_CATEGORY" value="0" />
-<input type="hidden" id="TR_FLIGHTS" name="TR_FLIGHTS" value="TRUE" />
-<input type="hidden" id="SHUTTLE_FLIGHTS" name="SHUTTLE_FLIGHTS" value="TRUE" />
-<input type="hidden" id="SCHEDULE" name="SCHEDULE" value="TRUE" />
-<input type="hidden" id="SEVEN_DAY_SEARCH" name="SEVEN_DAY_SEARCH" value="TRUE" />
-<input type="hidden" id="SO_SITE_SD_AIRL_FILTER_ACTIV" name="SO_SITE_SD_AIRL_FILTER_ACTIV" value="TRUE" />
-<input type="hidden" id="SO_SITE_REST_AIRLINES_LST" name="SO_SITE_REST_AIRLINES_LST" value="FB;VS;9W;US" />
-<input type="hidden" id="TRIP_FLOW" name="TRIP_FLOW" value="YES" />
-<input type="hidden" id="BOOKING_FLOW" name="BOOKING_FLOW" value="REVENUE" />
-<input type="hidden" id="PRICING_TYPE" name="PRICING_TYPE" value="O" />
-<input type="hidden" id="DISPLAY_TYPE" name="DISPLAY_TYPE" value="1" />
-<input type="hidden" id="SO_SITE_FP_PRICING_TYPE" name="SO_SITE_FP_PRICING_TYPE" value="O" />
-<input type="hidden" id="ARRANGE_BY" name="ARRANGE_BY" value="D" />
-<input type="hidden" id="REFRESH" name="REFRESH" value="0" />
-<input type="hidden" id="COMMERCIAL_FARE_FAMILY_1" name="COMMERCIAL_FARE_FAMILY_1" value="ECONOMY" />
-<input type="hidden" id="COMMERCIAL_FARE_FAMILY_2" name="COMMERCIAL_FARE_FAMILY_2" value="BUSINESS" />
-<input type="hidden" id="DATE_RANGE_QUALIFIER_1" name="DATE_RANGE_QUALIFIER_1" value="C" />
-<input type="hidden" id="DATE_RANGE_QUALIFIER_2" name="DATE_RANGE_QUALIFIER_2" value="C" />
-<input type="hidden" id="SO_SITE_ALLOW_SERVICE_FEE" name="SO_SITE_ALLOW_SERVICE_FEE" value="1" />
-<input type="hidden" id="ALLOW_PRIMARY_YTH" name="ALLOW_PRIMARY_YTH" value="Y" />
-<input type="hidden" id="ALLOW_PRIMARY_STU" name="ALLOW_PRIMARY_STU" value="Y" />
-<input type="hidden" id="E_TIME" name="E_TIME" value="0000" />
-<input type="hidden" id="B_TIME" name="B_TIME" value="0000" />
-<input type="hidden" id="B_ANY_TIME_1" name="B_ANY_TIME_1" value="TRUE" />
-<input type="hidden" id="B_ANY_TIME_2" name="B_ANY_TIME_2" value="TRUE" />
-<input type="hidden" id="SO_GL" name="SO_GL" value="<?xml version='1.0' encoding='iso-8859-1'?><SO_GL><GLOBAL_LIST><NAME>SITE_LIST_EXTERNAL_REMARK</NAME><LIST_ELEMENT><CODE>*</CODE><LIST_VALUE>BKT+online booking</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST><GLOBAL_LIST><NAME>SITE_SERVICE_FEE</NAME><LIST_ELEMENT><CODE>0</CODE><LIST_VALUE>0</LIST_VALUE><LIST_VALUE>2</LIST_VALUE><LIST_VALUE></LIST_VALUE><LIST_VALUE>BGN</LIST_VALUE><LIST_VALUE>0</LIST_VALUE><LIST_VALUE>DU</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST><GLOBAL_LIST><NAME>SO_SINGLE_MULTIPLE_COMMAND_BUILDER</NAME><LIST_ELEMENT><CODE>1</CODE><LIST_VALUE><![CDATA[RM IP ]]></LIST_VALUE><LIST_VALUE>S</LIST_VALUE></LIST_ELEMENT></GLOBAL_LIST></SO_GL> " />
+
+<div id="traveler_data" class="main-booking-form-container-amadeus"></div>
+
+<div id="amadeus_data" class="main-booking-form-container-amadeus">
+  <input type="hidden" id="SO_SITE_USER_CURRENCY_CODE" name="SO_SITE_USER_CURRENCY_CODE" value="USD" />
+  <input type="hidden" id="SO_SITE_POINT_OF_SALE" name="SO_SITE_POINT_OF_SALE" value="SOF" />
+  <input type="hidden" id="EMBEDDED_TRANSACTION" name="EMBEDDED_TRANSACTION" value="FlexPricerAvailability" />
+  <input type="hidden" id="EXTERNAL_ID" name="EXTERNAL_ID" value="BOOKING" />
+  <input type="hidden" id="LANGUAGE" name="LANGUAGE" value="GB" />
+  <input type="hidden" id="SEARCH_BY" name="SEARCH_BY" value="1" />
+  <input type="hidden" id="SITE" name="SITE" value="5ANS5ANS" />
+  <input type="hidden" id="RESULT_LANGUAGE" name="RESULT_LANGUAGE" value="EN" />
+  <input type="hidden" id="SO_SITE_QUEUE_OFFICE_ID" name="SO_SITE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
+  <input type="hidden" id="SO_QUEUE_NUMBER" name="SO_QUEUE_NUMBER" value="0" />
+  <input type="hidden" id="SO_QUEUE_CATEGORY" name="SO_QUEUE_CATEGORY" value="0" />
+  <input type="hidden" id="SO_FAILURE_QUEUE_OFFICE_ID" name="SO_FAILURE_QUEUE_OFFICE_ID" value="SOFFB08AB" />
+  <input type="hidden" id="SO_FAILURE_QUEUE_NUMBER" name="SO_FAILURE_QUEUE_NUMBER" value="13" />
+  <input type="hidden" id="SO_FAILURE_QUEUE_CATEGORY" name="SO_FAILURE_QUEUE_CATEGORY" value="0" />
+  <input type="hidden" id="TR_FLIGHTS" name="TR_FLIGHTS" value="TRUE" />
+  <input type="hidden" id="SHUTTLE_FLIGHTS" name="SHUTTLE_FLIGHTS" value="TRUE" />
+  <input type="hidden" id="SCHEDULE" name="SCHEDULE" value="TRUE" />
+  <input type="hidden" id="SEVEN_DAY_SEARCH" name="SEVEN_DAY_SEARCH" value="TRUE" />
+  <input type="hidden" id="SO_SITE_SD_AIRL_FILTER_ACTIV" name="SO_SITE_SD_AIRL_FILTER_ACTIV" value="TRUE" />
+  <input type="hidden" id="SO_SITE_REST_AIRLINES_LST" name="SO_SITE_REST_AIRLINES_LST" value="FB;VS;9W;US" />
+  <input type="hidden" id="TRIP_FLOW" name="TRIP_FLOW" value="YES" />
+  <input type="hidden" id="BOOKING_FLOW" name="BOOKING_FLOW" value="REVENUE" />
+  <input type="hidden" id="PRICING_TYPE" name="PRICING_TYPE" value="O" />
+  <input type="hidden" id="DISPLAY_TYPE" name="DISPLAY_TYPE" value="1" />
+  <input type="hidden" id="SO_SITE_FP_PRICING_TYPE" name="SO_SITE_FP_PRICING_TYPE" value="O" />
+  <input type="hidden" id="ARRANGE_BY" name="ARRANGE_BY" value="D" />
+  <input type="hidden" id="REFRESH" name="REFRESH" value="0" />
+  <input type="hidden" id="COMMERCIAL_FARE_FAMILY_1" name="COMMERCIAL_FARE_FAMILY_1" value="ECONOMY" />
+<!-- ana - commenting this out for the moment
+  <input type="hidden" id="COMMERCIAL_FARE_FAMILY_2" name="COMMERCIAL_FARE_FAMILY_2" value="BUSINESS" />
+-->
+  <input type="hidden" id="DATE_RANGE_QUALIFIER_1" name="DATE_RANGE_QUALIFIER_1" value="C" />
+  <input type="hidden" id="DATE_RANGE_QUALIFIER_2" name="DATE_RANGE_QUALIFIER_2" value="C" />
+  <input type="hidden" id="SO_SITE_ALLOW_SERVICE_FEE" name="SO_SITE_ALLOW_SERVICE_FEE" value="1" />
+  <input type="hidden" id="ALLOW_PRIMARY_YTH" name="ALLOW_PRIMARY_YTH" value="Y" />
+  <input type="hidden" id="ALLOW_PRIMARY_STU" name="ALLOW_PRIMARY_STU" value="Y" />
+  <input type="hidden" id="E_TIME" name="E_TIME" value="0000" />
+  <input type="hidden" id="B_TIME" name="B_TIME" value="0000" />
+  <input type="hidden" id="B_ANY_TIME_1" name="B_ANY_TIME_1" value="TRUE" />
+  <input type="hidden" id="B_ANY_TIME_2" name="B_ANY_TIME_2" value="TRUE" />
+  <input type="hidden" id="SO_GL" name="SO_GL" value="<?xml version='1.0' encoding='iso-8859-1'?><SO_GL><GLOBAL_LIST mode='partial'>  <NAME>SITE_SITE_FARE_COMMANDS_AND_OPTIONS</NAME>  <LIST_ELEMENT><CODE>101</CODE><!--CabinTypeID-->  <LIST_VALUE>0</LIST_VALUE><!--FaringCommandID-->  <LIST_VALUE>2</LIST_VALUE><!--BookingCommandID-->  <LIST_VALUE>4</LIST_VALUE><!--FareTypeID-->  <LIST_VALUE/><!--CorporateCode-->  <LIST_VALUE/><!--CorporateFareTypeID-->  <LIST_VALUE/><!--PrivateFare-->  <LIST_VALUE/><!--ForcePTC-->  <LIST_VALUE/><!--DiscountCode-->  <LIST_VALUE/><!--FareSelectionCurrency-->  <LIST_VALUE>USD</LIST_VALUE><!--FareConversionCurrency-->  <LIST_VALUE>TRUE</LIST_VALUE><!--CabinOption-->  <LIST_VALUE/><!--CrossCabin-->  <LIST_VALUE/><!--PTCDiscountId-->  <LIST_VALUE/><!--CumulativeDiscount-->  <LIST_VALUE>Y</LIST_VALUE><!--CabinOptionValue-->  <LIST_VALUE/><!--NoSplitOption-->  <LIST_VALUE/><!--TaxesRequirements-->  <LIST_VALUE/><!--SurchargesRequirements-->  </LIST_ELEMENT></GLOBAL_LIST>  </SO_GL> " />
 </div>
 
 		<div class="form-box-button form-box-button-submit" style="margin: 20px 10px;">

@@ -99,12 +99,12 @@ $('#amadeus_book').submit(function(){
 
 });
 
-/* AD: Commening out for BgAirUsa
+/* AD - comment out for now
 $('#B_LOCATION_1,#E_LOCATION_1').change(function(){
 	// get the service fee
 	$.ajax({
 		type: 'POST',
-		url: '/ajax/service_fee',
+		url: 'http://air.bg/ajax/service_fee',
 		data: {from: $('#B_LOCATION_1').val(), to: $('#E_LOCATION_1').val()},
 		success: function(result) { $('#SO_GL').val(result); },
 		dataType: "text"
@@ -160,5 +160,31 @@ $("#sign_up_form").submit(function(e){
 		dataType: 'html'
 	});
 	
+});
+
+$("#CABIN").change(function(){
+
+   var cabin = $("#CABIN").val();
+   if (cabin == "E") {
+     $("#COMMERCIAL_FARE_FAMILY_2").remove();
+     if ( $("#COMMERCIAL_FARE_FAMILY_1").length == 0) {
+       $("#amadeus_data").append('<input type="hidden" id="COMMERCIAL_FARE_FAMILY_1" name="COMMERCIAL_FARE_FAMILY_1" value="ECONOMY" />');
+     }
+
+     var so_gl_economy = "<?xml version='1.0' encoding='iso-8859-1'?><SO_GL><GLOBAL_LIST mode='partial'>  <NAME>SITE_SITE_FARE_COMMANDS_AND_OPTIONS</NAME> <LIST_ELEMENT><CODE>101</CODE><!--CabinTypeID-->  <LIST_VALUE>0</LIST_VALUE><!--FaringCommandID-->  <LIST_VALUE>2</LIST_VALUE><!--BookingCommandID-->  <LIST_VALUE>4</LIST_VALUE><!--FareTypeID-->  <LIST_VALUE/><!--CorporateCode-->  <LIST_VALUE/><!--CorporateFareTypeID-->  <LIST_VALUE/><!--PrivateFare-->  <LIST_VALUE/><!--ForcePTC-->  <LIST_VALUE/><!--DiscountCode-->  <LIST_VALUE/><!--FareSelectionCurrency-->  <LIST_VALUE>USD</LIST_VALUE><!--FareConversionCurrency-->  <LIST_VALUE>TRUE</LIST_VALUE><!--CabinOption-->  <LIST_VALUE/><!--CrossCabin-->  <LIST_VALUE/><!--PTCDiscountId-->  <LIST_VALUE/><!--CumulativeDiscount-->  <LIST_VALUE>Y</LIST_VALUE><!--CabinOptionValue-->  <LIST_VALUE/><!--NoSplitOption-->  <LIST_VALUE/><!--TaxesRequirements-->  <LIST_VALUE/><!--SurchargesRequirements-->  </LIST_ELEMENT></GLOBAL_LIST></SO_GL>";
+
+     $("#SO_GL").val(so_gl_economy);
+   }
+   else if (cabin == "B"){
+     $("#COMMERCIAL_FARE_FAMILY_1").remove();
+     if ( $("#COMMERCIAL_FARE_FAMILY_2").length == 0) {
+       $("#amadeus_data").append('<input type="hidden" id="COMMERCIAL_FARE_FAMILY_2" name="COMMERCIAL_FARE_FAMILY_2" value="BUSINESS" />');
+     }
+
+     var so_gl_business = "<?xml version='1.0' encoding='iso-8859-1'?><SO_GL><GLOBAL_LIST mode='partial'>  <NAME>SITE_SITE_FARE_COMMANDS_AND_OPTIONS</NAME>  <LIST_ELEMENT><CODE>102</CODE><!--CabinTypeID-->  <LIST_VALUE>0</LIST_VALUE><!--FaringCommandID-->  <LIST_VALUE>2</LIST_VALUE><!--BookingCommandID-->  <LIST_VALUE>4</LIST_VALUE><!--FareTypeID-->  <LIST_VALUE/><!--CorporateCode-->  <LIST_VALUE/><!--CorporateFareTypeID-->  <LIST_VALUE/><!--PrivateFare-->  <LIST_VALUE/><!--ForcePTC-->  <LIST_VALUE/><!--DiscountCode-->  <LIST_VALUE/><!--FareSelectionCurrency-->  <LIST_VALUE>USD</LIST_VALUE><!--FareConversionCurrency-->  <LIST_VALUE>TRUE</LIST_VALUE><!--CabinOption-->  <LIST_VALUE/><!--CrossCabin-->  <LIST_VALUE/><!--PTCDiscountId-->  <LIST_VALUE/><!--CumulativeDiscount-->  <LIST_VALUE>Y</LIST_VALUE><!--CabinOptionValue-->  <LIST_VALUE/><!--NoSplitOption-->  <LIST_VALUE/><!--TaxesRequirements-->  <LIST_VALUE/><!--SurchargesRequirements-->  </LIST_ELEMENT></GLOBAL_LIST>  </SO_GL> ";
+	
+     $("#SO_GL").val(so_gl_business);
+  }
+
 });
 
